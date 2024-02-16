@@ -27,12 +27,19 @@ function createGrid(gridSize) {
 // add an event listener that activates when the mouse hovers over a dive
 //change the backgroundcolor of the div when mouse hovers
 //
-
+let brightnessLevel = 1;
 container.addEventListener("mouseover", (e) => {
     if (e.target !== e.currentTarget)
     {
         e.stopPropagation()
-        e.target.style.backgroundColor = "red";    
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        brightnessLevel -= 0.1;
+        e.target.style.backgroundColor = "rgb("+r+", "+g+", "+b+")";
+
+
+        //i give up
     }
 
 });
