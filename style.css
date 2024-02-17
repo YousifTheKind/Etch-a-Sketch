@@ -6,6 +6,7 @@ body {
     flex-wrap: wrap;
     height: 600px;
     width: 600px;
+    border: solid rgb(240, 241, 195) 1px;
 }
 
 .gridStyle {
